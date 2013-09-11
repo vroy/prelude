@@ -139,6 +139,12 @@ Passes ARG to command `kill-whole-line' when provided."
   (kill-whole-line arg)
   (back-to-indentation))
 
+(defun prelude-kill-line-backward ()
+  "Kill from cursor position to beginning of line."
+  (interactive)
+  (kill-line 0)
+  (indent-according-to-mode))
+
 (defun prelude-move-beginning-of-line (arg)
   "Move point back to indentation of beginning of line.
 

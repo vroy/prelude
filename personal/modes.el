@@ -1,6 +1,7 @@
 ;; Additional modes that are not provided by prelude
 (require 'rhtml-mode)
 (require 'haml-mode)
+(require 'coffee-mode)
 
 ;; Auto setup of modes based on extensions
 (add-to-list 'auto-mode-alist '("\\.xhtml$" . rhtml-mode) )

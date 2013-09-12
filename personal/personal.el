@@ -31,3 +31,4 @@
 (global-set-key (kbd "C-x |") 'split-window-horizontally)
 (global-set-key (kbd "C-x -") 'split-window-vertically)
 (global-set-key [(control return)] 'textmate-next-line)
+(global-set-key (kbd "<s-return>") 'textmate-next-line)

@@ -2,6 +2,7 @@
 (require 'rhtml-mode)
 (require 'haml-mode)
 (require 'coffee-mode)
+(require 'yaml-mode)
 
 ;; Auto setup of modes based on extensions
 (add-to-list 'auto-mode-alist '("\\.xhtml$" . rhtml-mode) )
@@ -24,7 +25,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode) )
 
-(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode) )
+(add-to-list 'auto-mode-alist '("\\.yml\\.?" . yaml-mode) )
 
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode) )
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode) )

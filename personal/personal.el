@@ -8,8 +8,8 @@
 ;; Disaxble spellchecking
 (setq prelude-flyspell nil)
 
-;; Set default font size to 13pt.
-(set-face-attribute 'default (selected-frame) :height 130)
+;; Set default font size to 15pt.
+(set-face-attribute 'default (selected-frame) :height 150)
 
 ;; Refresh buffers automatically when file changed on disk.
 (global-auto-revert-mode t)

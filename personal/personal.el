@@ -1,18 +1,20 @@
 ;; My personal config
 ;;
 ;; prelude's init.el will require the following files for us:
-;;   * ./bindings
 ;;   * ./functions
 ;;   * ./modes
 
 ;; Disaxble spellchecking
 (setq prelude-flyspell nil)
 
-;; Set default font size to 15pt.
-(set-face-attribute 'default (selected-frame) :height 150)
+;; Set default font size to 16pt.
+(set-face-attribute 'default (selected-frame) :height 160)
 
 ;; Refresh buffers automatically when file changed on disk.
 (global-auto-revert-mode t)
+
+;; Turn off bell completely.
+(setq ring-bell-function 'ignore)
 
 ;; Set the coffeescript tab width to 2.
 (add-hook 'coffee-mode-hook '
